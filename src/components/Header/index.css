@@ -1,0 +1,40 @@
+/* Write your CSS code here */
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-logo {
+  width: 200px;
+  height: 50px;
+}
+
+.link-con {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ul {
+  width: 65%;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}

@@ -1,0 +1,40 @@
+.home-page-con {
+  height: 100vh;
+  background-color: #ffffff;
+}
+.main-body {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  color: #1e293b;
+  font-size: 50px;
+}
+
+.description {
+  color: #475569;
+  font-size: 18px;
+}
+
+.left-con {
+  width: 50%;
+}
+
+.show-btn {
+  background-color: #0967d2;
+  color: #ffffff;
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.clothes-img {
+  width: 30%;
+}
