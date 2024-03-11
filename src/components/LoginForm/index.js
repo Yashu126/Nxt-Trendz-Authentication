@@ -3,7 +3,7 @@ import './index.css'
 import {Component} from 'react'
 
 class LoginForm extends Component {
-  state = {username: '', password: '', error: false}
+  state = {username: '', password: '', error: false,errorMsg: ''}
 
   changeUsername = event => {
     this.setState({username: event.target.value})
@@ -66,17 +66,18 @@ class LoginForm extends Component {
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(url, option)
+    const data = await response.json()
     if (response.ok === true) {
       this.onSubmitSuccess()
     } else {
-      this.setState({error: true})
+      this.setState({error: true,errorMsg: data.error_msg})
     }
   }
 
   render() {
-    const {error} = this.state
+    const {error,errorMsg} = this.state
     const errormsg = error && (
-      <p className="error-msg">*Username and Password didnt match</p>
+      <p className="error-msg">*{errorMsg}</p>
     )
 
     return (
